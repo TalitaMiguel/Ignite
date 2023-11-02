@@ -1,0 +1,41 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22rem;
+}
+
+.header img {
+  height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.header .title {
+  display: flex;
+  margin: 0 0 1.5rem 0.75rem;
+}
+
+.header p:first-child {
+  color: var(--Blue, #4ea8de);
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.header p:last-child {
+  color: var(--purple-dark, #5e60ce);
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+@media (max-width: 1366px) {
+  .header {
+    height: 14rem;
+  }
+}

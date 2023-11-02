@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem auto 1.5rem;
+}
+
+.createdTasks,
+.completedTasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.createdTasks p {
+  color: var(--blue);
+}
+.completedTasks p {
+  color: var(--purple);
+}
+
+.createdTasks p,
+.completedTasks p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.completedTasks span,
+.createdTasks span {
+  display: flex;
+  padding: 2px 8px;
+  font-weight: 700;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  align-items: center;
+  color: var(--gray-200);
+  justify-content: center;
+  background: var(--gray-400);
+  font-family: "Inter", sans-serif;
+}
+
+.noToDoList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid var(--gray-400);
+  padding: 4rem 0;
+}
+
+.noToDoList > img {
+  width: 3.5rem;
+  margin: 1rem 0;
+}
+
+.toDoList {
+  gap: 0.75rem;
+  display: grid;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-items: flex-start;
+  grid-template-columns: 25px 1fr 25px;
+
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  background: var(--gray-500);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.toDoList > img {
+  width: 1rem;
+}
+.toDoList > p {
+  color: var(--gray-100);
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.225rem; /* 19.6px */
+}
+
+.toDoList .toDoListNotCheck {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.toDoList ~ .toDoList {
+  margin-top: 0.75rem;
+}
+
+.toDoList .deletedTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.toDoList .deletedTask:hover {
+  color: var(--red-danger);
+  background: var(--gray-400);
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 1rem;
+  }
+  .noToDoList,
+  .toDoList {
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+}
