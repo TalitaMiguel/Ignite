@@ -1,4 +1,4 @@
-<div id= "top" align="center"><img width= "150px", src="rock.png"/></div>
+<div id= "top" align="center"><img width= "350px", src="https://global-uploads.webflow.com/61d83a2ebb0ae01ab96e841a/62d86b52dd890b4acef46ec3_OG-ignite.jpg"/></div>
 <h3 align="center">IGNITE - Rocketseat</h3>
 
 
