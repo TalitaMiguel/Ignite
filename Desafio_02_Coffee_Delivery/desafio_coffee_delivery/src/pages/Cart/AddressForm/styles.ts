@@ -3,7 +3,6 @@ import MaskedInput from 'react-text-mask'
 import { PaymentMethodType } from '.'
 
 export const Card = styled.section`
-  width: 100%;
   padding: 2rem;
   margin: 1rem 0;
   border-radius: 6px;

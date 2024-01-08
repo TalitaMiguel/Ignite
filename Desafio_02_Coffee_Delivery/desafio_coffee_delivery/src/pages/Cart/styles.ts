@@ -4,6 +4,10 @@ export const CartContainer = styled.main`
   display: grid;
   grid-template-columns: 56.5% 40%;
   gap: 2rem;
+
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
 `
 
 export const Order = styled.div`
