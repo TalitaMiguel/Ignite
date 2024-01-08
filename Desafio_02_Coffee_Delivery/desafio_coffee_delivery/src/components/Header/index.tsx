@@ -1,4 +1,9 @@
-import { CountTotalItens, HeaderContainer } from './styles'
+import {
+  CartImg,
+  CountTotalItens,
+  HeaderContainer,
+  HeaderContent,
+} from './styles'
 import { MapPin, ShoppingCart } from 'phosphor-react'
 import { NavLink } from 'react-router-dom'
 import { useContext, useEffect, useState } from 'react'
@@ -34,25 +39,29 @@ export function Header() {
 
   return (
     <HeaderContainer>
-      <NavLink to="/" title="Home">
-        <img src={Logo} alt="" />
-      </NavLink>
+      <HeaderContent>
+        <NavLink to="/" title="Home">
+          <img src={Logo} alt="" />
+        </NavLink>
 
-      <nav>
-        <NavLink to="/cart" title="Endereço">
-          <MapPin size={24} weight="fill" />
-          <span>
-            {locationInfo ? locationInfo?.city : ''}
-            {locationInfo ? `, ${locationInfo?.state}` : ''}
-          </span>
-        </NavLink>
-        <NavLink to="/cart" title="Carrinho">
-          <ShoppingCart size={24} weight="fill" />
-          <CountTotalItens
-            data-count={String(quantityOfOrders.length)}
-          ></CountTotalItens>
-        </NavLink>
-      </nav>
+        <nav>
+          <NavLink to="/cart" title="Endereço">
+            <MapPin size={24} weight="fill" />
+            <span>
+              {locationInfo ? locationInfo?.city : ''}
+              {locationInfo ? `, ${locationInfo?.state}` : ''}
+            </span>
+          </NavLink>
+          <NavLink to="/cart" title="Carrinho">
+            <CartImg>
+              <ShoppingCart size={24} weight="fill" />
+              <CountTotalItens
+                data-count={String(quantityOfOrders.length)}
+              ></CountTotalItens>
+            </CartImg>
+          </NavLink>
+        </nav>
+      </HeaderContent>
     </HeaderContainer>
   )
 }

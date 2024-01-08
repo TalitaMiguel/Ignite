@@ -7,8 +7,20 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   position: sticky;
   top: 0%;
-  background-color: ${(props) => props.theme.background};
+
+  background: ${(props) => props.theme.background};
   padding: 2rem 0;
+  z-index: 1;
+`
+
+export const HeaderContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
 
   nav {
     display: flex;
@@ -44,6 +56,11 @@ export const HeaderContainer = styled.header`
     }
   }
 `
+
+export const CartImg = styled.div`
+  position: relative;
+`
+
 interface CountTotalItensProps extends HTMLAttributes<HTMLDivElement> {
   'data-count'?: string
 }
@@ -53,6 +70,7 @@ export const CountTotalItens = styled.div<CountTotalItensProps>`
     content: ${(props) =>
       props['data-count'] !== '0' ? `attr(data-count)` : "''"};
     background: ${(props) => props.theme['yellow-dark']};
+
     font-size: 0.75rem;
     font-weight: 700;
     color: ${(props) => props.theme.white};
@@ -62,8 +80,8 @@ export const CountTotalItens = styled.div<CountTotalItensProps>`
     min-height: 1.5rem;
     min-width: 1.5rem;
     position: absolute;
-    top: 25px;
-    right: -9px;
+    top: -1.2rem;
+    left: 1.3rem;
     border-radius: 50%;
   }
 `
