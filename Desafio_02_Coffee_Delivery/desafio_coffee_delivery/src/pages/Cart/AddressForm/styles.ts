@@ -1,6 +1,5 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import MaskedInput from 'react-text-mask'
-import { PaymentMethodType } from '.'
 
 export const Card = styled.section`
   padding: 2rem;
@@ -82,6 +81,10 @@ export const TypePaymentContainer = styled.div`
   gap: 0.5rem;
 `
 
+interface PaymentMethodType {
+  variant?: string
+}
+
 export const TypePaymentDiv = styled.div<PaymentMethodType>`
   display: flex;
   align-items: center;
@@ -93,13 +96,12 @@ export const TypePaymentDiv = styled.div<PaymentMethodType>`
   border-radius: 4px;
   color: ${(props) => props.theme['base-text']};
 
-  border: ${(props) =>
-    props.isActive
-      ? `2px solid ${props.theme.purple}`
-      : `2px solid ${props.theme['base-button']}`};
-
-  background-color: ${(props) =>
-    props.isActive ? props.theme['purple-light'] : props.theme['base-button']};
+  ${(props) =>
+    props.variant === 'true' &&
+    css`
+      border: 2px solid ${(props) => props.theme.purple};
+      background: ${(props) => props.theme['purple-light']};
+    `}
 
   &:hover {
     background: ${(props) => props.theme['base-hover']};
@@ -128,3 +130,7 @@ export const TypePaymentDiv = styled.div<PaymentMethodType>`
     margin-right: 0.5rem;
   }
 `
+
+// Configurando shouldForwardProp para permitir que a propriedade `variant`
+// seja encaminhada para o DOM
+TypePaymentDiv.shouldForwardProp = (prop) => prop !== 'variant'

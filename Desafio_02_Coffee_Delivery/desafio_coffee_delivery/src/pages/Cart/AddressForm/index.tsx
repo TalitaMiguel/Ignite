@@ -17,10 +17,6 @@ import {
   TypePaymentDiv,
 } from './styles'
 
-export interface PaymentMethodType {
-  isActive?: boolean
-}
-
 export function AddressForm() {
   const {
     watch,
@@ -157,7 +153,9 @@ export function AddressForm() {
           </div>
         </CartTitle>
         <TypePaymentContainer>
-          <TypePaymentDiv isActive={selectedPaymentMethod === 'credit'}>
+          <TypePaymentDiv
+            variant={(selectedPaymentMethod === 'credit').toString()}
+          >
             <input
               id={'credit'}
               type="radio"
@@ -173,7 +171,9 @@ export function AddressForm() {
             </label>
           </TypePaymentDiv>
 
-          <TypePaymentDiv isActive={selectedPaymentMethod === 'debit'}>
+          <TypePaymentDiv
+            variant={(selectedPaymentMethod === 'debit').toString()}
+          >
             <input
               id={'debit'}
               type="radio"
@@ -189,7 +189,9 @@ export function AddressForm() {
             </label>
           </TypePaymentDiv>
 
-          <TypePaymentDiv isActive={selectedPaymentMethod === 'cash'}>
+          <TypePaymentDiv
+            variant={(selectedPaymentMethod === 'cash').toString()}
+          >
             <input
               id={'cash'}
               type="radio"
