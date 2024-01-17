@@ -1,7 +1,7 @@
-Projeto Web desenvolvido durante o Bootcamp Ignite by Rocketseat • Trilha ReactJS - Desafio 10 - TEMA: "Coffee Delivery" ☕️
+<h1> ☕ Coffee Delivery</h1>
 
-Descrição:
-O projeto trata-se de uma aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia, que contém as seguintes funcionalidades:
+<h2>Descrição:</h2>
+O projeto trata-se de uma aplicação para gerenciar um carrinho de compras de uma cafeteria, que contém as seguintes funcionalidades:
 
  Listagem de produtos (cafés) disponíveis para compra;
  Adicionar uma quantidade específicas de itens no carrinho;
