@@ -3,15 +3,18 @@ import styled from 'styled-components'
 export const SuccessContainer = styled.main`
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
 `
 
 export const SuccessWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  margin: 2rem auto;
+  margin: 2rem 0;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: left;
 `
 
 export const Title = styled.div`
