@@ -23,12 +23,29 @@
 <h2>Imagens do projeto:</h2>
 <table>
   <tr>
-    <th>Home</th>
-    <th>Home - Lista de cafés</th>
+    <th>HOME</th>
+    <th>HOME - Lista de cafés</th>
   </tr>
   <tr>
-    <td>aa</td>
-    <td>Maria Anders</td>
+    <td>
+      <img width= "500px", src="https://github.com/TalitaMiguel/Ignite/assets/62106501/43d800bf-7089-43d7-a2af-eb78e047a092"/>
+    </td>
+    <td>
+     <img width= "500px", src="https://github.com/TalitaMiguel/Ignite/assets/62106501/b92d35ac-9551-4a39-bcf2-11ae35c37642"/>
+    </td>
+  </tr>
+
+  <tr>
+    <th>CHECKOUT</th>
+    <th>SUCESSO</th>
+  </tr>
+  <tr>
+    <td>
+      <img width= "500px", src="https://github.com/TalitaMiguel/Ignite/assets/62106501/f6a3b959-0638-41b6-813b-7558df7084ea"/>
+    </td>
+    <td>
+     <img width= "500px", src="https://github.com/TalitaMiguel/Ignite/assets/62106501/eac573cc-43a2-43e7-ab91-40282ac1ef7f"/>
+    </td>
   </tr>
   
 </table>
