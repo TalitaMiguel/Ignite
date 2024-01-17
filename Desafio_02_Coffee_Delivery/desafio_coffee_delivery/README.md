@@ -19,3 +19,17 @@
 - Zod | ^3.17.10
 - Axios | ^0.27.2
 - Json Server | ^0.17.0 -D
+
+<h2>Imagens do projeto:</h2>
+<table>
+  <tr>
+    <th>Home</th>
+    <th>Home - Lista de cafés</th>
+  </tr>
+  <tr>
+    <td>aa</td>
+    <td>Maria Anders</td>
+  </tr>
+  
+</table>
+
