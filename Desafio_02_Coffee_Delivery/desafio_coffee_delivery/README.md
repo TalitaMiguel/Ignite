@@ -1,7 +1,7 @@
 <h1> ☕ Coffee Delivery</h1>
 
  <span>Desafio 2: **Coffee Delivery**</span>
-   - Nesse desafio, desenvolvi uma aplicação para gerenciar o carrinho de compras de uma cafeteria, que contém as seguintes funcionalidades:
+- Nesse desafio, desenvolvi uma aplicação para gerenciar o carrinho de compras de uma cafeteria, que contém as seguintes funcionalidades:
    - Listagem de produtos (cafés) disponíveis para compra;
    - Adicionar itens no carrinho;
    - Aumentar ou remover a quantidade de itens no carrinho;
