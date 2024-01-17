@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+Projeto Web desenvolvido durante o Bootcamp Ignite by Rocketseat • Trilha ReactJS - Desafio 10 - TEMA: "Coffee Delivery" ☕️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descrição:
+O projeto trata-se de uma aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia, que contém as seguintes funcionalidades:
 
-Currently, two official plugins are available:
+ Listagem de produtos (cafés) disponíveis para compra;
+ Adicionar uma quantidade específicas de itens no carrinho;
+ Aumentar ou remover a quantidade de itens no carrinho;
+ Formulário para o usuário preencher o seu endereço e forma de pagamento;
+ Obter o endereço pelo CEP informado e preencher os campos automaticamente;
+ Exibir o total de itens no carrinho no Header;
+ Exibir o valor total da soma de itens no carrinho multiplicados pelo valor;
+ Layout responsivo (mobile e desktop).
+ 
+Tecnologias utilizadas: 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ReactJs | ^18.2.0
+Vite | ^3.0.0 -D
+Typescript | ^4.6.4 -D
+Styled Components | ^5.3.5
+React Hook Form | ^7.34.0
+Zod | ^3.17.10
+Axios | ^0.27.2
+Json Server | ^0.17.0 -D
