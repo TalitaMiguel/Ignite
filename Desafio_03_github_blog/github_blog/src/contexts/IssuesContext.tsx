@@ -1,4 +1,5 @@
 import { ReactNode, createContext, useEffect, useState } from 'react'
+import { api } from '../lib/axios'
 
 interface Issues {
   id: number
@@ -44,30 +45,24 @@ export function IssuesProvider({ children }: IssuesProviderProps) {
   const [errorSearch, setErrorSearch] = useState<boolean>(false)
 
   async function LoadIssues() {
-    const response = await fetch(
-      'https://api.github.com/repos/TalitaMiguel/ignite/issues',
-    )
-    const data = await response.json()
+    const response = await api.get('/repos/TalitaMiguel/ignite/issues')
 
-    setIssues(data)
+    setIssues(response.data)
   }
 
   async function LoadUser() {
-    const response = await fetch('https://api.github.com/users/TalitaMiguel')
-    const data = await response.json()
+    const response = await api.get('/users/TalitaMiguel')
 
-    setUser(data)
+    setUser(response.data)
   }
 
   async function SearchIssues(data: SearchIssuesType) {
-    console.log('data', data.query)
-    const response = await fetch(
-      `https://api.github.com/search/issues?q=${data.query}%20repo:TalitaMiguel/ignite`,
+    const response = await api.get(
+      `/search/issues?q=${data.query}%20repo:TalitaMiguel/ignite`,
     )
-    const issuesFiltered = await response.json()
 
-    if (issuesFiltered.total_count !== 0) {
-      setIssues(issuesFiltered.items)
+    if (response.data?.total_count > 0) {
+      setIssues(response.data?.items)
       setErrorSearch(false)
     } else {
       setErrorSearch(true)
