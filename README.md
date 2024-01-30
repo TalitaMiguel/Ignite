@@ -21,12 +21,12 @@
 
 <span id= "coffee">Desafio 2: **Coffee Delivery**</span>
    - Nesse desafio, desenvolvi uma aplicação para gerenciar o carrinho de compras de uma cafeteria, que contém as seguintes funcionalidades:
-   - Listagem de produtos (cafés) disponíveis para compra;
-   - Adicionar itens no carrinho;
-   - Aumentar ou remover a quantidade de itens no carrinho;
-   - Formulário com o endereço e forma de pagamento;
-   - Exibir o total de itens no carrinho no Header;
-   - Exibir o valor total dos itens no carrinho e valor do frete.
+     - Listagem de produtos (cafés) disponíveis para compra;
+     - Adicionar itens no carrinho;
+     - Aumentar ou remover a quantidade de itens no carrinho;
+     - Formulário com o endereço e forma de pagamento;
+     - Exibir o total de itens no carrinho no Header;
+     - Exibir o valor total dos itens no carrinho e valor do frete.
 
 <br />
 
