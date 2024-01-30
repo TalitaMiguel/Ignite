@@ -1,3 +1,4 @@
+import Markdown from 'react-markdown'
 import styled from 'styled-components'
 
 export const CardsContainer = styled.div`
@@ -14,7 +15,7 @@ export const Card = styled.div`
   flex-direction: column;
   border-radius: 10px;
   background: ${(props) => props.theme['base-post']};
-  padding: 2rem;
+  padding: 1rem;
   cursor: pointer;
 
   header {
@@ -38,13 +39,20 @@ export const Card = styled.div`
       line-height: 1.375rem;
     }
   }
+`
 
-  p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+export const StyledMarkdown = styled(Markdown)`
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
+  color: ${(props) => props.theme['base-text']};
+  font-size: 1rem;
+  font-weight: 400;
+
+  h1,
+  h2 {
     color: ${(props) => props.theme['base-text']};
     font-size: 1rem;
     font-weight: 400;

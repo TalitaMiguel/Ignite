@@ -13,5 +13,6 @@ export const SearchFormContainer = styled.form`
     padding: 0.75rem 1rem;
     border: 1px solid ${(props) => props.theme['base-border']};
     background: ${(props) => props.theme['base-input']};
+    color: ${(props) => props.theme['base-text']};
   }
 `

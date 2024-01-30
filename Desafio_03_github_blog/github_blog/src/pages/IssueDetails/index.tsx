@@ -1,28 +1,22 @@
-import { useContext } from 'react'
-import { IssuesContext } from '../../contexts/IssuesContext'
-import { useParams } from 'react-router-dom'
+import { IssueDetailsContainer, StyledMarkdown } from './style'
+import { DetailsInfoBox } from '../../components/DetailsInfoBox'
+import { useIssues } from '../../hooks/useIssues'
 
 export function IssueDetails() {
-  const { issues } = useContext(IssuesContext)
-  const params = useParams()
+  const issueFiltered = useIssues()
 
-  console.log('issues', issues)
-  console.log('params', params.issueId)
-
-  const issueFiltered = issues.filter(
-    (issue) => issue.number === Number(params.issueId),
-  )
-
-  console.log('result', issueFiltered)
   return (
-    <div>
-      {issueFiltered.map((item) => {
-        return (
-          <div key={item.id}>
-            <p>{item.body}</p>
-          </div>
-        )
-      })}
-    </div>
+    <>
+      <DetailsInfoBox />
+      <IssueDetailsContainer>
+        {issueFiltered.map((item) => {
+          return (
+            <div key={item.id}>
+              <StyledMarkdown>{item.body}</StyledMarkdown>
+            </div>
+          )
+        })}
+      </IssueDetailsContainer>
+    </>
   )
 }
