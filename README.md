@@ -5,6 +5,7 @@
 <p align="center">
   <a href="#todoList"> 🚀 Desafio 1 - To-do List</a> &#xa0;|&#xa0;
   <a href="#coffee"> ☕ Desafio 2 - Coffee Delivery</a> &#xa0;|&#xa0;
+  <a href="#github"> 📖 Desafio 3 - Github Blog</a> &#xa0;|&#xa0;
 </p>
 
 <h2> ✔ Desafios: </h2>
@@ -26,3 +27,13 @@
    - Formulário com o endereço e forma de pagamento;
    - Exibir o total de itens no carrinho no Header;
    - Exibir o valor total dos itens no carrinho e valor do frete.
+
+<br />
+
+<span id= "github">Desafio 3: **Github Blog**</span>
+   - Nesse desafio, desenvolvi uma aplicação que utiliza a API do GitHub para buscar issues de um repositório, dados do perfil, que contém as seguintes funcionalidades:
+     - Listagem do seu perfil com imagem, número de seguidores, nome e outras informações disponíveis pela API do GitHub;
+     - Listar e filtrar todas as issues do repositório com um pequeno resumo do conteúdo dela;
+     - Criar uma página para exibir um post (issue) completo.
+
+<br />
